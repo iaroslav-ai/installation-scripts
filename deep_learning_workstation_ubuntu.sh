@@ -68,6 +68,10 @@ pip3 install flask
 # notebooks
 pip3 install jupyter
 
+# distributed computing
+pip3 install joblib
+pip3 install dask[complete]
+
 # fix libdc warning on ubuntu
 sudo ln /dev/null /dev/raw1394
 
