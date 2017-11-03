@@ -3,6 +3,10 @@
 ### run script like `bash ..untu.sh gpu` to install gpu drivers ###
 ### be sure to disable the safe boot first though ###
 
+if [[ $1 == "gpu" ]]; then 
+read -p "Did you disable secure boot in BIOS settings? If not, please do so. Otherwise installing Nvidia drivers will likely break your installation." yn
+fi
+
 # remember script location
 the_script_path=$PWD
 # get distribution name
@@ -17,6 +21,7 @@ cd
 
 if [[ $1 == "gpu" ]]; then 
 
+read -p "Did you disable secure boot in Bios settings? If not, please do so."
 
 if [[ "$distrib_nam" == 'xenial' ]]; then
 # install cuda (and drivers)
