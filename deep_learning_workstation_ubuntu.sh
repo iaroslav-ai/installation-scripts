@@ -21,8 +21,6 @@ cd
 
 if [[ $1 == "gpu" ]]; then 
 
-read -p "Did you disable secure boot in Bios settings? If not, please do so."
-
 if [[ "$distrib_nam" == 'xenial' ]]; then
 # install cuda (and drivers)
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
