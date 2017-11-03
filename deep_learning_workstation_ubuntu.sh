@@ -58,6 +58,7 @@ pip3 install pandas
 # machine learning
 pip3 install scikit-learn
 pip3 install scikit-optimize
+sudo apt-get install python3-tk -y # necessary for scikit-optimize
 pip3 install tensorflow
 pip3 install keras
 
