@@ -24,4 +24,4 @@ WantedBy=multi-user.target
 " | sudo tee /lib/systemd/system/mongod.service
 fi
 
-sudo pip install pymongo
+pip3 install pymongo
